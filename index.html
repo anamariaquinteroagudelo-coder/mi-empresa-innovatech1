@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovatech - Soluciones Digitales</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabecera de la empresa -->
+    <header>
+        <h1>Innovatech</h1>
+        <p>Tu aliado en desarrollo de software y aplicaciones web</p>
+    </header>
+
+    <!-- Menú de navegación / Botones -->
+    <nav>
+        <button onclick="mostrarSeccion('inicio')">Inicio</button>
+        <button onclick="mostrarSeccion('servicios')">Servicios</button>
+        <button onclick="mostrarSeccion('contacto')">Contacto</button>
+    </nav>
+
+    <!-- Secciones de contenido -->
+    <main>
+        <section id="inicio" class="seccion">
+            <h2>Bienvenidos a Innovatech</h2>
+            <p>Creamos soluciones tecnológicas a la medida de tus necesidades para impulsar tu negocio al siguiente nivel.</p>
+        </section>
+
+        <section id="servicios" class="seccion oculta">
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li>Desarrollo de aplicaciones web y móviles</li>
+                <li>Diseño UI/UX moderno</li>
+                <li>Consultoría tecnológica</li>
+            </ul>
+        </section>
+
+        <section id="contacto" class="seccion oculta">
+            <h2>Contáctanos</h2>
+            <p>Escríbenos a: <strong>contacto@innovatech.com</strong></p>
+            <p>Teléfono: +57 300 123 4567</p>
+        </section>
+    </main>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
