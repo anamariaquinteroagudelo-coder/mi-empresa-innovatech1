@@ -9,7 +9,7 @@ body {
 
 header {
     background-color: #0b2545;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 2rem;
 }
 
@@ -31,7 +31,7 @@ nav button {
 
 nav button:hover {
     background-color: #8da9c4;
-    color: #0b2545;
+    color: #0de3e3;
 }
 
 .seccion {
@@ -56,4 +56,370 @@ ul {
 ul li {
     padding: 8px 0;
     font-size: 1.1rem;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 25px auto;
+}
+
+.menu button {
+    background-color: #d85c91;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu button:hover {
+    background-color: #b93f76;
+    transform: translateY(-2px);
+}
+
+.seccion {
+    display: none;
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff0f6;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px #e8bfd0;
+}
+
+.seccion.activa {
+    display: block;
+}
+
+.seccion h2 {
+    color: #b93f76;
+    margin-bottom: 15px;
+}
+
+.seccion p,
+.seccion li {
+    color: #624653;
+    line-height: 1.8;
+}
+
+.seccion li {
+    margin-left: 20px;
+}
+
+.seccion input,
+.seccion textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0 18px;
+    padding: 12px;
+    border: 1px solid #e7b6cb;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+.seccion textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.seccion button {
+    background: #d85c91;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fc;
+    color: #263449;
+    line-height: 1.7;
+}
+
+.encabezado {
+    background: #101d35;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #42c6ff;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #42c6ff;
+}
+
+.principal {
+    padding: 100px 10%;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #101d35, #1756a9);
+}
+
+.etiqueta {
+    color: #42c6ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.principal h1 {
+    font-size: clamp(32px, 5vw, 54px);
+    line-height: 1.2;
+    max-width: 850px;
+    margin: 0 auto 20px;
+}
+
+.principal h1 span {
+    color: #42c6ff;
+}
+
+.principal > p:not(.etiqueta) {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #e0eaff;
+}
+
+.boton {
+    display: inline-block;
+    background: #1674df;
+    color: white;
+    padding: 13px 23px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background: #0c56ad;
+    transform: translateY(-2px);
+}
+
+.seccion {
+    padding: 75px 8%;
+    text-align: center;
+    scroll-margin-top: 20px;
+}
+
+.seccion h2 {
+    color: #142b4e;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.seccion > p:not(.subtitulo) {
+    max-width: 850px;
+    margin: 0 auto 30px;
+}
+
+.subtitulo {
+    color: #6a7789;
+    margin-bottom: 35px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-top: 35px;
+    text-align: left;
+}
+
+.tarjeta {
+    background: white;
+    padding: 27px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px #162b4610;
+    border: 1px solid #e7edf5;
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px #162b4620;
+}
+
+.tarjeta h3 {
+    color: #1756a9;
+    margin: 10px 0;
+}
+
+.servicios {
+    background: #eaf1fb;
+}
+
+.icono {
+    font-size: 38px;
+}
+
+.etiqueta-proyecto {
+    color: #1674df;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.franja {
+    padding: 65px 8%;
+    background: linear-gradient(120deg, #1756a9, #101d35);
+    text-align: center;
+    color: white;
+}
+
+.franja h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.franja p {
+    margin-bottom: 25px;
+}
+
+.boton-claro {
+    background: white;
+    color: #1756a9;
+}
+
+.boton-claro:hover {
+    background: #eaf1fb;
+}
+
+.contacto-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+    text-align: left;
+    margin-top: 35px;
+}
+
+.datos-contacto,
+form {
+    background: white;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px #162b4610;
+}
+
+.datos-contacto h3 {
+    margin-bottom: 20px;
+    color: #1756a9;
+}
+
+.datos-contacto p {
+    margin: 15px 0;
+    overflow-wrap: anywhere;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+form input,
+form textarea {
+    padding: 13px;
+    border: 1px solid #ccd6e5;
+    border-radius: 7px;
+    font: inherit;
+    width: 100%;
+}
+
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 2px solid #42c6ff;
+}
+
+#respuesta {
+    color: #1756a9;
+    font-weight: bold;
+}
+
+footer {
+    background: #101d35;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer h3 {
+    color: #42c6ff;
+    margin-bottom: 8px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+@media (max-width: 600px) {
+    .encabezado {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .principal {
+        padding: 65px 7%;
+    }
+
+    .seccion {
+        padding: 50px 6%;
+    }
 }
