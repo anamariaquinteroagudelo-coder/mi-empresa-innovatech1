@@ -423,3 +423,76 @@ footer p {
         padding: 50px 6%;
     }
 }
+/* ESTADÍSTICAS */
+.estadisticas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+    padding: 35px 8%;
+    background: #ffffff;
+    text-align: center;
+}
+
+.estadistica {
+    padding: 20px;
+    border-radius: 12px;
+    background: #eaf1fb;
+}
+
+.estadistica h2 {
+    font-size: 32px;
+    color: #1674df;
+}
+
+.estadistica p {
+    color: #263449;
+}
+
+/* PREGUNTAS FRECUENTES */
+.pregunta {
+    max-width: 850px;
+    margin: 15px auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #dce5f1;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.pregunta summary {
+    color: #1756a9;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pregunta p {
+    margin-top: 15px;
+    color: #526176;
+    line-height: 1.7;
+}
+
+.pregunta[open] {
+    border-color: #1674df;
+}
+
+/* ANIMACIÓN DE TARJETAS */
+.tarjeta {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px #162b4620;
+}
+
+/* ADAPTACIÓN A CELULARES */
+@media (max-width: 600px) {
+    .estadisticas {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 25px 5%;
+    }
+
+    .estadistica h2 {
+        font-size: 26px;
+    }
+}
