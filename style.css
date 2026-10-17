@@ -496,3 +496,270 @@ footer p {
         font-size: 26px;
     }
 }
+/* ESTADÍSTICAS */
+.estadisticas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+    padding: 35px 8%;
+    background: #ffffff;
+    text-align: center;
+}
+
+.estadistica {
+    padding: 20px;
+    border-radius: 12px;
+    background: #eaf1fb;
+}
+
+.estadistica h2 {
+    font-size: 32px;
+    color: #1674df;
+}
+
+.estadistica p {
+    color: #263449;
+}
+
+/* PREGUNTAS FRECUENTES */
+.pregunta {
+    max-width: 850px;
+    margin: 15px auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #dce5f1;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.pregunta summary {
+    color: #1756a9;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pregunta p {
+    margin-top: 15px;
+    color: #526176;
+    line-height: 1.7;
+}
+
+.pregunta[open] {
+    border-color: #1674df;
+}
+
+/* ANIMACIÓN DE TARJETAS */
+.tarjeta {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px #162b4620;
+}
+
+/* ADAPTACIÓN A CELULARES */
+@media (max-width: 600px) {
+    .estadisticas {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 25px 5%;
+    }
+
+    .estadistica h2 {
+        font-size: 26px;
+    }
+}
+/* GALERÍA */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    text-align: left;
+}
+
+.proyecto-card {
+    background: white;
+    padding: 18px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #162b4615;
+    transition: 0.3s;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-6px);
+}
+
+.imagen-proyecto {
+    height: 150px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    font-size: 55px;
+}
+
+.tienda {
+    background: #dcecff;
+}
+
+.escuela {
+    background: #e5e0ff;
+}
+
+.empresa {
+    background: #d8f6ed;
+}
+
+.proyecto-card h3 {
+    margin: 15px 0 8px;
+    color: #1756a9;
+}
+
+.proyecto-card span {
+    display: inline-block;
+    margin-top: 12px;
+    color: #1674df;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* BUSCADOR */
+.buscador {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 15px;
+    border: 1px solid #cbd7e8;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.resultados-busqueda {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    text-align: left;
+}
+
+.resultado {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #dce5f1;
+}
+
+/* BOTÓN MODO OSCURO */
+.boton-modo {
+    background: #243b60;
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* MODO OSCURO */
+body.oscuro {
+    background: #101827;
+    color: #e8eef8;
+}
+
+body.oscuro .seccion,
+body.oscuro .tarjeta,
+body.oscuro .proyecto-card,
+body.oscuro .resultado,
+body.oscuro .datos-contacto,
+body.oscuro form,
+body.oscuro .pregunta {
+    background: #1c293d;
+    color: #e8eef8;
+    border-color: #34445d;
+}
+
+body.oscuro .seccion h2,
+body.oscuro .tarjeta h3,
+body.oscuro .proyecto-card h3 {
+    color: #70baff;
+}
+
+body.oscuro .servicios,
+body.oscuro .estadisticas,
+body.oscuro .estadistica {
+    background: #152137;
+    color: #e8eef8;
+}
+
+body.oscuro .subtitulo,
+body.oscuro .proyecto-card p,
+body.oscuro .resultado p {
+    color: #c0cde0;
+}
+
+body.oscuro input,
+body.oscuro textarea {
+    background: #101827;
+    color: white;
+    border-color: #455a78;
+}
+
+body.oscuro .estadistica p {
+    color: #e8eef8;
+}
+
+body.oscuro .pregunta summary {
+    color: #70baff;
+}
+/* Se activa hasta 720 píxeles */
+@media (max-width: 720px) {
+    .container {
+        width: min(100% - 32px, var(--container));
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .nav-wrap {
+        min-height: 68px;
+        flex-wrap: wrap;
+        gap: 0;
+        padding-block: 10px;
+    }
+
+    /* Ocultar navegación de escritorio */
+    .desktop-nav,
+    .desktop-cta {
+        display: none;
+    }
+
+    /* Mostrar acordeón móvil */
+    .mobile-menu {
+        display: block;
+    }
+
+    .mobile-menu summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        min-height: 44px;
+        padding: 8px 12px;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        color: var(--primary);
+        font-weight: 750;
+        cursor: pointer;
+        list-style: none;
+    }
+
+    /* Ocultar marcador predeterminado del navegador */
+    .mobile-menu summary::-webkit-details-marker {
+        display: none;
+    }
+
+    /* Símbolo cuando el menú está cerrado */
+    .mobile-menu summary::after {
+        content: "+";
+        font-size: 1.2rem;
+    }
+}
